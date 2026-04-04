@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   n8n:
     image: n8nio/n8n:latest
@@ -10,10 +8,17 @@ services:
     environment:
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=admin
-      - N8N_BASIC_AUTH_PASSWORD=tu_password_seguro # CAMBIA ESTO
+      - N8N_BASIC_AUTH_PASSWORD=tu_password_seguro # Cambiala si querés
       - TZ=America/Argentina/Buenos_Aires
     volumes:
       - ./n8n_data:/home/node/.n8n
+
+  
+
+  redis_bot:
+    image: redis:alpine
+    container_name: redis_bot
+    restart: always
 
 networks:
   default:

@@ -1,12 +1,19 @@
-node_modules/
-.n8n/
+# Carpetas de datos de Docker (¡NO SUBIR!)
+n8n_data/
+postgres_data/
+
+# Carpeta del código fuente de Evolution API (si la clonaste)
+evolution-api/
+
+# Archivos de secretos (por si los usas en el futuro)
 .env
-*.log
+
+# Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+
 # Archivos de Microsoft Word
 *.doc
 *.docx
-*.docm
-*.dotx
-
-# Archivos temporales de Word (esos que empiezan con ~$)
-~$*.doc*
+~$*.doc
+~$*.docx

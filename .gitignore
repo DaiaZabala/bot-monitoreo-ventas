@@ -2,3 +2,11 @@ node_modules/
 .n8n/
 .env
 *.log
+# Archivos de Microsoft Word
+*.doc
+*.docx
+*.docm
+*.dotx
+
+# Archivos temporales de Word (esos que empiezan con ~$)
+~$*.doc*

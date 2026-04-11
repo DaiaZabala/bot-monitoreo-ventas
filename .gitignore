@@ -17,3 +17,8 @@ Thumbs.db
 *.docx
 ~$*.doc
 ~$*.docx
+
+
+n8n_data/*.sqlite-shm
+n8n_data/*.sqlite-wal
+n8n_data/*.sqlite

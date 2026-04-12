@@ -1,24 +1,10 @@
-# Carpetas de datos de Docker (¡NO SUBIR!)
-n8n_data/
+# Volúmenes de Docker
 postgres_data/
+n8n_data/
 
-# Carpeta del código fuente de Evolution API (si la clonaste)
-evolution-api/
-
-# Archivos de secretos (por si los usas en el futuro)
+# Variables de entorno (si agregas una después)
 .env
 
-# Archivos temporales del sistema operativo
+# Archivos del sistema
 .DS_Store
 Thumbs.db
-
-# Archivos de Microsoft Word
-*.doc
-*.docx
-~$*.doc
-~$*.docx
-
-
-n8n_data/*.sqlite-shm
-n8n_data/*.sqlite-wal
-n8n_data/*.sqlite

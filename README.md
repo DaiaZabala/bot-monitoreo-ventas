@@ -33,6 +33,14 @@ Actualmente estoy aprendiendo a usar **n8n** y automatización de flujos. Los re
 - **Manejo de Zonas Horarias:** Uso de JavaScript (`America/Argentina/Buenos_Aires`) dentro de n8n para controlar las franjas horarias exactas de envío de mensajes.
 - **Gestión de Contenedores:** Configuración y comunicación de múltiples servicios (Evolution API, n8n, PostgreSQL, Redis) utilizando Docker Compose.
 
+## ¿Qué hacer si se cierra la sesión de WhatsApp?
+Si el bot deja de enviar avisos y en los logs aparece que la instancia está cerrada (`status: close`), debés reconectarla:
+1. Asegurate de que los contenedores estén corriendo (`docker compose up -d`).
+2. Entrá desde tu navegador a: `http://localhost:8080/manager`
+3. Buscá la instancia llamada **"-----"**.
+4. Hacé clic en **conectar** o generá el código QR.
+5. Escanealo con el celular de la librería desde *WhatsApp > Dispositivos vinculados* para que la sesión vuelva a estar activa (`open`).
+
 ## 📋 Próximos Pasos
 - [x] Configurar el contenedor de Docker con n8n.
 - [x] Conectar la Evolution API con mi cuenta de WhatsApp.
